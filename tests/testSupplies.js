@@ -12,7 +12,7 @@ const startQuery = [
   `INSERT INTO categories(category, flow_type_id) VALUES("생활비", 2)`,
   `INSERT INTO categories(category, flow_type_id) VALUES("공과금", 2)`,
   `INSERT INTO categories(category, flow_type_id) VALUES("기타", 2)`,
-  `INSERT INTO categories(category, flow_type_id) VALUES("기타사항", 2)`,
+  `INSERT INTO categories(category, flow_type_id) VALUES("기타사항", 1)`,
   `INSERT INTO USERS(name, email, birthdate, phone_number) VALUES("김지훈", "jwk2345@naver.com", "1980-1-09", "010-6666-6666")`,
   `INSERT INTO USERS(name, email, birthdate, phone_number) VALUES("이아영", "threesl@gmail.com", "1985-12-09", "010-3333-3333")`,
   `INSERT INTO USERS(name, email, birthdate, phone_number) VALUES("김지영", "fivesl@gmail.com", "2000-3-09", "010-5555-5555")`,
