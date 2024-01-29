@@ -12,7 +12,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chs991209/finpong_github_flow"
+    "url": "git+https://github.com/chs991209/finpong_github_flow.git"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +34,12 @@
     "prettier": "^3.2.2",
     "supertest": "^6.3.3",
     "typeorm": "^0.3.19"
+  },
+  "bugs": {
+    "url": "https://github.com/chs991209/finpong_github_flow/issues"
+  },
+  "homepage": "https://github.com/chs991209/finpong_github_flow#readme",
+  "directories": {
+    "test": "tests"
   }
 }
-
