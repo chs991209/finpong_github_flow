@@ -4,13 +4,18 @@ const { appDataSource } = require('../src/utils/dataSource');
 const supplies = require('./testSupplies.js');
 
 describe('get ping', () => {
-  let app;
+  const app = createApp();
 
   beforeAll(async () => {
-    app = createApp();
+    await appDataSource.initialize().then(() => {
+      console.log('test: DataSource has been initialized');
+    }).catch((err) => {
+      console.error('Error occurred while initializing DataSource', err);
+    });
   });
 
-  afterEach(async () => {});
+  afterEach(async () => {
+  });
 
   test('SUCCESS : get pong', async () => {
     const res = await request(app).get('/ping');

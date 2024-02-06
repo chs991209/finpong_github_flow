@@ -1,6 +1,5 @@
 const http = require('http');
 const dotenv = require('dotenv');
-
 dotenv.config();
 
 const { createApp } = require('./app');
@@ -11,10 +10,10 @@ const startServer = async () => {
   appDataSource
     .initialize()
     .then(() => {
-      console.log('Data Source has been initialized!');
+      console.log('DataSource has been initialized!');
     })
     .catch((err) => {
-      console.error('Error occured during Data Source initialization', err);
+      console.error('Error occurred during DataSource initialization', err);
     });
 
   const server = http.createServer(app);
